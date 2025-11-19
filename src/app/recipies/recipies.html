@@ -1,1 +1,51 @@
-<p>recipies works!</p>
+<app-header />
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-4">
+            <h4>Filter</h4>
+            <button class="btn mt-5">All</button>
+            <br>
+            <!-- cuisine dropdown -->
+            <button class="btn border dropdown-toggle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Cuisine Type
+            </button>
+            <div class="collapse mt-1" id="collapseExample">
+                <!-- duplicate -->
+                <button class="btn border btn-success">Cuisine</button>
+            </div>
+            <!-- meal type dropdown -->
+            <br>
+            <!-- cuisine dropdown -->
+            <button class="btn border dropdown-toggle mt-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                Meal Type
+            </button>
+            <div class="collapse mt-1" id="collapseExample1">
+                <!-- duplicate -->
+                <button class="btn border btn-success">MEAL</button>
+            </div>
+
+        </div>
+        <div class="col-lg-8">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1>All Recipies</h1>
+                <input type="text" placeholder="Find your Recipe" class="form-control w-50">
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="p-2">
+                        <img class="card-img-top rounded"
+                            src="https://img.freepik.com/premium-photo/minimalist-food-optical-illusion-design-white-background_899449-662653.jpg"
+                            alt="recipe">
+                        <div class="card-body mt-2">
+                            <h3 class="recipe name">Recipe name</h3>
+                            <p class="recipe text-secondary name">Cuisine name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer />
