@@ -28,66 +28,18 @@
         </div>
     </div>
     <div class="row my-3">
+        @for (item of allRecipes; track $index) {
         <div class="col-lg-4">
-            <div class="p-3">
-                <img class="card-img-top rounded"
-                    src="https://img.freepik.com/premium-photo/minimalist-food-optical-illusion-design-white-background_899449-662653.jpg"
-                    alt="recipe">
+            <div class="p-3 border rounded mb-3">
+                <img loading="lazy" width="100%" class="card-img-top rounded" [src]="item?.image" alt="recipe">
                 <div class="card-body">
-                    <h3 class="recipe name">recipe name</h3>
+                    <h3 class="recipe name mt-3">{{item?.name}}</h3>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
-            <div class="p-3">
-                <img class="card-img-top rounded"
-                    src="https://dfjx2uxqg3cgi.cloudfront.net/img/photo/208361/208361_00_2x.jpg?20200509130622"
-                    alt="recipe">
-                <div class="card-body">
-                    <h3 class="recipe name">recipe name</h3>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="p-3">
-                <img class="card-img-top rounded"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7DqIlj92YOjCT4-jFBeM3HvBZUmqyFVNWqw&s"
-                    alt="recipe">
-                <div class="card-body">
-                    <h3 class="recipe name">recipe name</h3>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="p-3">
-                <img class="card-img-top rounded"
-                    src="https://img.freepik.com/premium-photo/minimalist-food-optical-illusion-design-white-background_899449-662955.jpg"
-                    alt="recipe">
-                <div class="card-body">
-                    <h3 class="recipe name">recipe name</h3>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="p-3">
-                <img class="card-img-top rounded"
-                    src="https://static.vecteezy.com/system/resources/thumbnails/066/281/339/small/a-meticulously-plated-dish-with-geometric-precision-ingredients-arranged-in-lines-circles-and-squares-reflecting-a-modern-and-minimalist-aesthetic-highlighting-order-and-control-in-a-fine-dining-setting-isolated-on-clean-white-background-photo.jpg"
-                    alt="recipe">
-                <div class="card-body">
-                    <h3 class="recipe name">recipe name</h3>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="p-3">
-                <img class="card-img-top rounded"
-                    src="https://img.freepik.com/premium-photo/minimalist-food-optical-illusion-design-white-background_899449-662653.jpg"
-                    alt="recipe">
-                <div class="card-body">
-                    <h3 class="recipe name">recipe name</h3>
-                </div>
-            </div>
-        </div>
+        }
+
+
     </div>
     <!--recipe banner  -->
     <div class="my-5 row align-items-center"
